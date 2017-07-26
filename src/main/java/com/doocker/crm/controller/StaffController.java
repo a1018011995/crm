@@ -12,14 +12,7 @@ import com.doocker.crm.controller.commont.EasyuiResult;
 import com.doocker.crm.po.Staff;
 import com.doocker.crm.service.StaffService;
 import com.github.pagehelper.PageInfo;
-/**
-<<<<<<< HEAD
- * 处理部门的控制器
- * @author Administrator  dulong two
-=======
 
->>>>>>> branch 'master' of https://github.com/doockercom/crm.git
- */
 @Controller
 @RequestMapping("staff")
 public class StaffController {
@@ -58,9 +51,6 @@ public class StaffController {
 		
 	}
 
-	/**
-	 * 根据id删除staff
-	 */
 	@RequestMapping("del")
 	@ResponseBody
 	public EasyuiResult delete(@RequestParam(value="id",required=true)Integer id){
@@ -75,9 +65,6 @@ public class StaffController {
 	}
 	
 
-	/**
-	 *增加部门
-	 */
 	@RequestMapping("add")
 	@ResponseBody
 	public EasyuiResult add(Staff staff){
@@ -91,11 +78,7 @@ public class StaffController {
 		}
 		return new EasyuiResult(0L,ids,true,"success");
 	}
-	
-	
-	/**
-	 *修改部门
-	 */
+
 	@RequestMapping("update")
 	@ResponseBody
 	public EasyuiResult update(Staff staff){

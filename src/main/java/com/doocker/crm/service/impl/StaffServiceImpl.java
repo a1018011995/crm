@@ -52,9 +52,7 @@ public class StaffServiceImpl implements StaffService {
 		return staffMapper.selectByPrimaryKey(id);
 	}
 
-	/**
-	 * easyui的分页查询 接口
-	 */
+
 	@Override
 	public PageInfo<HashMap> selectListByPage(String staffName, Integer page, Integer rows) {
 		//example通过StaffExample来动态的增加修改查询条件
